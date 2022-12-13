@@ -2,7 +2,7 @@
   "type": "app",
   "version": "2.0.0",
   "name": "Batch image tagging",
-  "description": "Effective way to assign tags to multiple images at hte same time",
+  "description": "Effective way to assign tags to multiple images at the same time",
   "categories": [
     "idea",
     "images",
