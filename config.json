@@ -3,20 +3,14 @@
   "version": "2.0.0",
   "name": "Batch image tagging",
   "description": "Effective way to assign tags to multiple images at the same time",
-  "categories": [
-    "idea",
-    "images",
-    "labeling"
-  ],
+  "categories": ["images", "labeling"],
   "icon": "https://user-images.githubusercontent.com/12828725/207275995-2d394281-5b79-4ca6-a2af-876a221bf01b.png",
   "icon_cover": true,
   "poster": "https://user-images.githubusercontent.com/12828725/207278075-30fac847-b642-4972-a77d-2f71f252610e.png",
   "entrypoint": "python -m uvicorn src.main:app --host 0.0.0.0 --port 8000",
   "port": 8000,
   "context_menu": {
-    "target": [
-      "images_project"
-    ],
+    "target": ["images_project"],
     "context_category": "Transform"
   }
 }
