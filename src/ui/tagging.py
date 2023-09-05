@@ -335,15 +335,12 @@ def tag_batch():
 
     sly.logger.info(
         f"Tagging of batch on page {g.STATE.current_page_number} finished. "
-        f"Succesfully tagged {len(image_ids_with_tags)} images. Number of errors: {len(image_ids_with_errors)}. "
+        f"Succesfully tagged {len(image_ids_with_tags)} images. "
         f"Image ids with errors: {image_ids_with_errors}."
     )
 
     if len(image_ids_with_errors) > 0:
-        error_text.text = (
-            f"Number of errors: {len(image_ids_with_errors)}. "
-            f"Image ids with errors: {', '.join(image_ids_with_errors)}."
-        )
+        error_text.text = f"Image ids with errors: {', '.join(image_ids_with_errors)}."
         error_text.show()
 
     update_galleries(image_ids_with_tags)

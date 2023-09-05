@@ -3,6 +3,7 @@
   "version": "2.0.0",
   "name": "Batch image tagging",
   "description": "Effective way to assign tags to multiple images at the same time",
+  "docker_image": "supervisely/base-py-sdk:6.72.118",
   "categories": ["images", "labeling"],
   "icon": "https://user-images.githubusercontent.com/12828725/207275995-2d394281-5b79-4ca6-a2af-876a221bf01b.png",
   "icon_cover": true,
@@ -10,7 +11,7 @@
   "entrypoint": "python -m uvicorn src.main:app --host 0.0.0.0 --port 8000",
   "port": 8000,
   "context_menu": {
-    "target": ["images_project"],
+    "target": ["images_project", "images_dataset", "ecosystem"],
     "context_category": "Transform"
   }
 }
