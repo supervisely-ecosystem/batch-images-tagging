@@ -6,7 +6,7 @@ UI
 - UX sketches required
 
 Requirements
-- UI inspiration - [Images thumbnail preview](https://ecosystem.supervise.ly/apps/thumbnails-preview)
+- UI inspiration - [Images thumbnail preview](../../../../supervisely-ecosystem/thumbnails-preview)
 - save image status in its metadata
 - global progress bar
 - stop app, start app and continue labeling from the the last batch
